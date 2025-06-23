@@ -139,7 +139,7 @@
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light py-3">
             <div class="d-flex align-items-center">
-                <img src="/Codigo/TemQueSer - Front/img/LogoFormatada.png" alt="TemQueSer logo" class="img-fluid me-2" width="50" height="50">
+                <img src="../../img/LogoFormatada.png" alt="TemQueSer logo" class="img-fluid me-2" width="50" height="50">
                 <span class="navbar-brand mb-0 h1 text-primary-custom">TemQueSer</span>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
@@ -264,7 +264,7 @@
             if (error) return;
 
             // Envio da requisição para criar o conteúdo
-            fetch('http://localhost:8080/conteudos', {
+            fetch('https://temqueserapi.onrender.com/conteudos', {
                 method: 'POST',
                 headers: {
                     'Authorization': `Bearer ${token}`,
@@ -299,7 +299,7 @@
 
         // Função para buscar os conteúdos
         function fetchConteudos() {
-            fetch('http://localhost:8080/conteudos', {
+            fetch('https://temqueserapi.onrender.com/conteudos', {
                 method: 'GET',
                 headers: {
                     'Authorization': `Bearer ${token}`

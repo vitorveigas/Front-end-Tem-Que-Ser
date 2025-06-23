@@ -16,21 +16,21 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
             emailSocioMaster: email,
             senhaSocioMaster: senha
         };
-        endpoint = 'http://localhost:8080/auth/login-socioMaster';
+        endpoint = 'https://temqueserapi.onrender.com/auth/login-socioMaster';
         userType = 'sócio master';
     } else if (isSocio) {
         loginData = {
             emailSocio: email,
             senhaSocio: senha
         };
-        endpoint = 'http://localhost:8080/auth/login-socio';
+        endpoint = 'https://temqueserapi.onrender.com/auth/login-socio';
         userType = 'sócio';
     } else {
         loginData = {
             emailCliente: email,
             senhaCliente: senha
         };
-        endpoint = 'http://localhost:8080/auth/login';
+        endpoint = 'https://temqueserapi.onrender.com/auth/login';
         userType = 'cliente';
     }
 

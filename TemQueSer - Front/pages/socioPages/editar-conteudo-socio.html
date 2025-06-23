@@ -22,7 +22,7 @@
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light py-3">
             <div class="d-flex align-items-center">
-                <img src="/Codigo/TemQueSer - Front/img/LogoFormatada.png" alt="TemQueSer logo" class="img-fluid me-2" width="50" height="50">
+                <img src="../../img/LogoFormatada.png" alt="TemQueSer logo" class="img-fluid me-2" width="50" height="50">
                 <span class="navbar-brand mb-0 h1 text-primary-custom">TemQueSer</span>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
@@ -96,7 +96,7 @@
   <footer class="bg-dark text-white mt-5 pt-4 pb-3">
     <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
       <div class="d-flex align-items-center mb-3 mb-md-0">
-        <img src="/TemQueSer - Front/img/LogoFormatada.png" alt="Logo da TemQueSer" class="img-fluid" width="50" height="50" />
+        <img src="../../img/LogoFormatada.png" alt="Logo da TemQueSer" class="img-fluid" width="50" height="50" />
         <div class="ms-2">
           <p class="mb-0 fw-bold">Tem</p>
           <p class="mb-0 fw-bold">Que</p>
@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Configurações
-    const apiUrl = "http://localhost:8080/conteudos";
+    const apiUrl = "https://temqueserapi.onrender.com/conteudos";
     const params = new URLSearchParams(window.location.search);
     const idConteudo = params.get("id");
 

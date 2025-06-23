@@ -10,7 +10,7 @@ window.addEventListener("load", async () => {
     }
 
     try {
-        const response = await fetch("http://localhost:8080/sociosMaster/me", {
+        const response = await fetch("https://temqueserapi.onrender.com/sociosMaster/me", {
             method: "GET",
             headers: {
                 "Authorization": "Bearer " + token,
@@ -142,7 +142,7 @@ btnEditar.addEventListener("click", async () => {
             };
 
             const token = localStorage.getItem("jwtToken");
-            const response = await fetch("http://localhost:8080/sociosMaster/editarSocioMaster", {
+            const response = await fetch("https://temqueserapi.onrender.com/sociosMaster/editarSocioMaster", {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json",
@@ -179,7 +179,7 @@ btnExcluir.addEventListener("click", async () => {
         const token = localStorage.getItem("jwtToken");
 
         try {
-            const response = await fetch("http://localhost:8080/sociosMaster/me", {
+            const response = await fetch("https://temqueserapi.onrender.com/sociosMaster/me", {
                 method: "DELETE",
                 headers: {
                     "Authorization": "Bearer " + token

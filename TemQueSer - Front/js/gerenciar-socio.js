@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Função para carregar todos os sócios
     async function carregarSocios() {
         try {
-            const response = await fetch("http://localhost:8080/socios/todosSocios"); // <<< precisa criar esse endpoint no seu controller se ainda não existir!
+            const response = await fetch("https://temqueserapi.onrender.com/socios/todosSocios"); // <<< precisa criar esse endpoint no seu controller se ainda não existir!
             
             if (response.ok) {
                 const socios = await response.json();
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
     window.excluirSocio = async function(id) {
         if (confirm("Tem certeza que deseja excluir este sócio?")) {
             try {
-                const response = await fetch(`http://localhost:8080/socios/${id}`, {
+                const response = await fetch(`https://temqueserapi.onrender.com/socios/${id}`, {
                     method: "DELETE"
                 });
 

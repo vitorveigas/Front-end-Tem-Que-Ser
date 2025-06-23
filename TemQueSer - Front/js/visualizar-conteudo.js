@@ -5,7 +5,7 @@ if (!token) {
 }
 
 const isSocio = true; // Pode ser alterado por uma verificação futura de papel de usuário no token
-const apiUrl = "http://localhost:8080/conteudos";
+const apiUrl = "https://temqueserapi.onrender.com/conteudos";
 
 const cardContainer = document.getElementById("cardContainer");
 const detalheConteudo = document.getElementById("detalheConteudo");

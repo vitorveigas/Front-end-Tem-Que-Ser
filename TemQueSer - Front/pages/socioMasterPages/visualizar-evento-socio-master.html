@@ -183,7 +183,7 @@
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light py-3">
             <div class="d-flex align-items-center">
-                <img src="/Codigo/TemQueSer - Front/img/LogoFormatada.png" alt="TemQueSer logo" class="img-fluid me-2" width="50" height="50">
+                <img src="../../img/LogoFormatada.png" alt="TemQueSer logo" class="img-fluid me-2" width="50" height="50">
                 <span class="navbar-brand mb-0 h1 text-primary-custom">TemQueSer</span>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
@@ -238,7 +238,7 @@
       <div class="row">
         <div class="col-md-6 mb-3 mb-md-0">
           <div class="d-flex align-items-center">
-            <img src="../img/LogoFormatada.png" alt="Logo da TemQueSer" class="img-fluid me-3" width="40" height="40">
+            <img src="../../img/LogoFormatada.png" alt="Logo da TemQueSer" class="img-fluid me-3" width="40" height="40">
             <h5 class="mb-0 text-white">TemQueSer</h5>
           </div>
         </div>
@@ -261,7 +261,7 @@ if (!token) {
     window.location.href = '../pagina-home.html';
 }
 
-const apiUrl = "http://localhost:8080/eventos";
+const apiUrl = "https://temqueserapi.onrender.com/eventos";
 const eventosContainer = document.getElementById("eventos");
 const detalheEvento = document.getElementById("detalheEvento");
 
@@ -417,7 +417,7 @@ async function deletarEvento(idEvento) {
     if (!confirm('Tem certeza que deseja excluir este evento?')) return;
     
     try {
-        const response = await fetch(`http://localhost:8080/eventos/excluirEvento/${idEvento}`, {
+        const response = await fetch(`https://temqueserapi.onrender.com/eventos/excluirEvento/${idEvento}`, {
             method: 'DELETE',
             headers: {
                 'Authorization': `Bearer ${token}`

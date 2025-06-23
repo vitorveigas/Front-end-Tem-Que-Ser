@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
         };
 
         try {
-            const response = await fetch("http://localhost:8080/socios/cadastrarSocio", {
+            const response = await fetch("https://temqueserapi.onrender.com/socios/cadastrarSocio", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

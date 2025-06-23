@@ -65,7 +65,7 @@ function criarEvento() {
     if (error) return;
 
     // Envio da requisição para criar o evento
-    fetch('http://localhost:8080/eventos', {
+    fetch('https://temqueserapi.onrender.com/eventos', {
         method: 'POST',
         headers: {
             'Authorization': `Bearer ${token}`,
@@ -112,7 +112,7 @@ function fecharFormularioEvento() {
 
 // Função para buscar os eventos (com detalheEvento posicionado após o título)
 function fetchEventos() {
-    fetch('http://localhost:8080/eventos', {
+    fetch('https://temqueserapi.onrender.com/eventos', {
         method: 'GET',
         headers: {
             'Authorization': `Bearer ${token}`
@@ -167,7 +167,7 @@ function fetchEventos() {
 function deletarEvento(idEvento) {
     if (!confirm('Tem certeza que deseja excluir este evento?')) return;
     
-    fetch(`http://localhost:8080/eventos/excluirEvento/${idEvento}`, {
+    fetch(`https://temqueserapi.onrender.com/eventos/excluirEvento/${idEvento}`, {
         method: 'DELETE',
         headers: {
             'Authorization': `Bearer ${token}`

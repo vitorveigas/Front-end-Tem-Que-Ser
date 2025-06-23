@@ -4,7 +4,7 @@ if (!token) {
   window.location.href = '../login.html';
 }
 
-const apiUrl = "http://localhost:8080/conteudos";
+const apiUrl = "https://temqueserapi.onrender.com/conteudos";
 const cardContainer = document.getElementById("cardContainer");
 const detalheConteudo = document.getElementById("detalheConteudo");
 

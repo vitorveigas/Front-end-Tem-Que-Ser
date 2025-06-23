@@ -10,7 +10,7 @@ window.addEventListener("load", async () => {
     }
 
     try {
-        const response = await fetch("http://localhost:8080/clientes/me", {
+        const response = await fetch("https://temqueserapi.onrender.com/clientes/me", {
             method: "GET",
             headers: {
                 "Authorization": "Bearer " + token,
@@ -142,7 +142,7 @@ btnEditar.addEventListener("click", async () => {
             };
 
             const token = localStorage.getItem("jwtToken");
-            const response = await fetch("http://localhost:8080/clientes/editar", {
+            const response = await fetch("https://temqueserapi.onrender.com/clientes/editar", {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json",
@@ -178,7 +178,7 @@ btnExcluir.addEventListener("click", async () => {
         const token = localStorage.getItem("jwtToken");
 
         try {
-            const response = await fetch("http://localhost:8080/clientes/me", {
+            const response = await fetch("https://temqueserapi.onrender.com/clientes/me", {
                 method: "DELETE",
                 headers: {
                     "Authorization": "Bearer " + token

@@ -12,7 +12,7 @@ window.addEventListener("load", async () => {
         const isMaster = window.location.pathname.includes("master");
         const endpoint = isMaster ? "sociosMaster/me" : "socios/me";
 
-        const response = await fetch(`http://localhost:8080/${endpoint}`, {
+        const response = await fetch(`https://temqueserapi.onrender.com/${endpoint}`, {
             method: "GET",
             headers: {
                 "Authorization": "Bearer " + token,
@@ -151,7 +151,7 @@ async function salvarAlteracoes() {
 
     const token = localStorage.getItem("jwtToken");
     try {
-        const response = await fetch(`http://localhost:8080/${endpoint}`, {
+        const response = await fetch(`https://temqueserapi.onrender.com/${endpoint}`, {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json",
@@ -185,7 +185,7 @@ btnExcluir.addEventListener("click", async () => {
         
         const token = localStorage.getItem("jwtToken");
         try {
-            const response = await fetch(`http://localhost:8080/${endpoint}`, {
+            const response = await fetch(`https://temqueserapi.onrender.com/${endpoint}`, {
                 method: "DELETE",
                 headers: {
                     "Authorization": "Bearer " + token
