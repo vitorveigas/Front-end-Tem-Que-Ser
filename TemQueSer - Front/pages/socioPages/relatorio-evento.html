@@ -210,7 +210,7 @@
                     <li class="nav-item"><a class="nav-link text-dark" href="calendario-socio-normal.html">Calendário</a></li>
                     
                     <li class="nav-item"><a class="nav-link text-dark" href="../socioPages/editar-perfil-socios.html">Minha Conta</a></li>
-                    <li class="nav-item"><a class="nav-link text-danger fw-bold" href="../pagina-home.html">Sair</a></li>
+                    <li class="nav-item"><a class="nav-link text-danger fw-bold" href="../index.html">Sair</a></li>
                 </ul>
             </div>
         </nav>
@@ -268,7 +268,7 @@
     const token = localStorage.getItem('jwtToken');
     if (!token) {
         alert('Você precisa estar logado para acessar esta página.');
-        window.location.href = '../pagina-home.html';
+        window.location.href = '../index.html';
     }
 
     // Obtém o ID do evento da URL

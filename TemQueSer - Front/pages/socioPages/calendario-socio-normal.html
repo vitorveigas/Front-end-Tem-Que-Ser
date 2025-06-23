@@ -170,7 +170,7 @@
                     <li class="nav-item"><a class="nav-link text-dark" href="calendario-socio-normal.html">Calendário</a></li>
                     
                     <li class="nav-item"><a class="nav-link text-dark" href="../socioPages/editar-perfil-socios.html">Minha Conta</a></li>
-                    <li class="nav-item"><a class="nav-link text-danger fw-bold" href="../pagina-home.html">Sair</a></li>
+                    <li class="nav-item"><a class="nav-link text-danger fw-bold" href="../index.html">Sair</a></li>
                 </ul>
             </div>
         </nav>
@@ -307,7 +307,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const token = localStorage.getItem('jwtToken');
     if (!token) {
         alert('Sessão expirada. Por favor, faça login novamente.');
-        window.location.href = '../pagina-home.html';
+        window.location.href = '../index.html';
         return;
     }
 
