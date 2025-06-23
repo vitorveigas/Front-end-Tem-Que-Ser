@@ -23,7 +23,7 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
             emailSocio: email,
             senhaSocio: senha
         };
-        endpoint = 'https://temqueserapi.onrender.com/auth/login-socio';
+        endpoint = 'https://temqueserapi.fly.dev//auth/login-socio';
         userType = 'sócio';
     } else {
         loginData = {
