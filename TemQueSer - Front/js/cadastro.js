@@ -63,7 +63,7 @@ document.getElementById("cadastroForm").addEventListener("submit", async functio
     console.log("Dados enviados para cadastro:", JSON.stringify(cadastroData, null, 2));
 
     try {
-        const response = await fetch("https://temqueserapi.fly.dev/clientes/cadastrar", {
+        const response = await fetch("https://temqueserapi.onrender.com/clientes/cadastrar", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
